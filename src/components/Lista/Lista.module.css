@@ -1,0 +1,8 @@
+.contenedorLista {
+  border-radius: 5px;
+  border: 1px solid grey;
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  background-color: antiquewhite;
+}
