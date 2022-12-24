@@ -1,12 +1,16 @@
-import Lista from './components/Lista/Lista.jsx'
-import styles from './App.module.css'
+import HomePage from './components/HomePage/HomePage'
+import ListaTareas from './components/ListaTareas/ListaTareas'
+import MasterPage from './components/MasterPage/MasterPage'
+import { Route, Switch } from 'wouter'
 
 const App = () => {
   return (
-    <div className={styles.app}>
-      <h1 className={styles.titulo}>Lista de tareas</h1>
-      <Lista></Lista>
-    </div>
+    <MasterPage>
+      <Switch>
+        <Route path="/" component={HomePage} />
+        <Route path="/ListaTareas" component={ListaTareas} />
+      </Switch>
+    </MasterPage>
   )
 }
 

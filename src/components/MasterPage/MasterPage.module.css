@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+  margin-bottom: 1px solid black;
+  box-shadow: 3px 2px 11px 0 black;
+  padding: 5px;
+}
+
+.headerButton {
+  background-color: #f1f1f1;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color ease 200ms;
+}
+.headerButton:hover {
+  background-color: #e2e2e2;
+}
+
+.headerButtonSelected {
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color ease 200ms;
+  background-color: #000000;
+  color: white;
+}
+
+.headerButton:hover {
+  background-color: #393939;
+}
