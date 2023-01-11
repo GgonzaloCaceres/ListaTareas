@@ -22,6 +22,7 @@ module.exports = {
   plugins: ['react'],
   rules: {
     'space-before-function-paren': ['error', 'never'],
-    indent: ['error', 2]
+    indent: ['error', 2],
+    'react/prop-types': 0
   }
 }
