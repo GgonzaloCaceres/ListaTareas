@@ -1,0 +1,14 @@
+.contenedorLista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgb(218, 218, 218);
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.558);
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+}

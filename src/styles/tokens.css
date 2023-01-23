@@ -1,0 +1,11 @@
+:root {
+  --primary: #fff;
+  --red: red;
+  --groceries-background: url('../../public/groceries-light-mode-background.jpg');
+}
+
+[data-theme='dark'] {
+  --primary: #000;
+  --red: red;
+  --groceries-background: url('../../public/groceries-dark-mode-background.jpg');
+}

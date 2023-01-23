@@ -1,11 +1,17 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   height: 30px;
   margin-bottom: 1px solid black;
   box-shadow: 3px 2px 11px 0 black;
   padding: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
 }
 
 .headerButton {
@@ -34,4 +40,15 @@
 
 .headerButton:hover {
   background-color: #393939;
+}
+
+.navigation {
+  display: flex;
+  gap: 15px;
+}
+
+.themeButton {
+  padding: 10px;
+
+  border-radius: 5px;
 }

@@ -1,0 +1,22 @@
+.groceryContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  /*  background: #f8f8f6a7; */
+  background: var(--primary);
+  height: 50px;
+  padding: 10px 20px;
+  margin: 10px;
+  box-shadow: 1px 1px 2px 0px;
+  transition: box-shadow 800ms ease;
+}
+.groceryContainer:hover {
+  box-shadow: inset 1px 1px 2px 0px;
+}
+
+.groceryIcon {
+  cursor: pointer;
+}
