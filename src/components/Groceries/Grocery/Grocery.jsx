@@ -11,6 +11,7 @@ const Grocery = ({ handleDeleteGrocery, gorceryData, ...props }) => {
       <section className={styles.groceryContainer}>
         <span>{gorceryData.titulo}</span>
         <button
+          className={styles.groceryButton}
           onClick={() =>
             setModalContent(
               <GroceryDeleteForm
@@ -20,7 +21,7 @@ const Grocery = ({ handleDeleteGrocery, gorceryData, ...props }) => {
             )
           }
         >
-          <FaTrash className={styles.groceryIcon} />
+          <FaTrash className={styles.groceryTrashIcon} />
         </button>
       </section>
       <Modal closeModal={() => setModalContent(undefined)}>

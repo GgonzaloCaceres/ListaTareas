@@ -1,0 +1,26 @@
+.addFormTitle {
+  font-size: 24px;
+  color: var(--primary);
+  box-sizing: border-box;
+  padding: 20px;
+  margin-top: 0;
+}
+.groceryAddModal {
+  background-color: var(--background-secondary-difused);
+  height: 60vh;
+  width: 20vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addFormInput {
+  border-radius: 5px;
+  height: 25px;
+}
+
+.groceryAddForm {
+  display: flex;
+  flex-direction: column;
+}

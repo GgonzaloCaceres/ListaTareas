@@ -5,7 +5,7 @@ import TaskList from './pages/TaskList/TaskList'
 const Routes = () => {
   return (
     <Switch>
-      <Route path="/Home" component={HomePage} />
+      <Route path="/" component={HomePage} />
       <Route path="/TaskList" component={TaskList} />
       <Route path="/Groceries" component={GroceriesList} />
     </Switch>

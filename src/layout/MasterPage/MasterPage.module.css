@@ -15,7 +15,8 @@
 }
 
 .headerButton {
-  background-color: #f1f1f1;
+  background-color: var(--background-primary);
+  color: var(--primary);
   padding: 5px;
   font-weight: bold;
   border-radius: 5px;
@@ -24,7 +25,7 @@
   transition: background-color ease 200ms;
 }
 .headerButton:hover {
-  background-color: #e2e2e2;
+  background-color: var(--background-secondary);
 }
 
 .headerButtonSelected {
@@ -34,12 +35,12 @@
   cursor: pointer;
   user-select: none;
   transition: background-color ease 200ms;
-  background-color: #000000;
-  color: white;
+  background-color: var(--background-secondary);
+  color: var(--secondary);
 }
 
 .headerButton:hover {
-  background-color: #393939;
+  background-color: var(--background-tertiary);
 }
 
 .navigation {
@@ -49,6 +50,8 @@
 
 .themeButton {
   padding: 10px;
-
-  border-radius: 5px;
+  margin-right: 20px;
+  background: none;
+  cursor: pointer;
+  border: none;
 }

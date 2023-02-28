@@ -5,6 +5,7 @@ import Grocery from '../../components/Groceries/Grocery/Grocery'
 import Modal from '../../components/Modal/Modal'
 import useGroceries from '../../hooks/useGroceries'
 import GroceryAddForm from '../../components/Groceries/GroceryAddForm/GroceryAddForm'
+import NoGroceries from '../../components/Groceries/NoGroceries/NoGroceries'
 
 const GroceriesList = () => {
   const [modalContent, setModalContent] = useState(undefined)
@@ -34,6 +35,8 @@ const GroceriesList = () => {
         {modalContent}
       </Modal>
       <List>
+        {console.log(groceriesList)}
+        {groceriesList.length < 1 && <NoGroceries />}
         {groceriesList.map(grocery => (
           <Grocery
             gorceryData={grocery}

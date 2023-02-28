@@ -1,11 +1,28 @@
 :root {
   --primary: #fff;
-  --red: red;
-  --groceries-background: url('../../public/groceries-light-mode-background.jpg');
+  --groceries-background-image: url('../../public/groceries-light-mode-background.jpg');
+  --primary: #102a43;
+  --secondary: #334e68;
+  --tertiary: #486581;
+  --quaternary: #627d98;
+  --background-primary: #f0f4f8;
+  --background-secondary: #d9e2ec;
+  --background-tertiary: #9fb3c8;
+  --primary-font: 'Roboto Mono', monospace;
+  --background-primary-difused: #f0f4f87d;
+  --background-secondary-difused: #e7edf3b9;
 }
 
 [data-theme='dark'] {
   --primary: #000;
-  --red: red;
-  --groceries-background: url('../../public/groceries-dark-mode-background.jpg');
+  --groceries-background-image: url('../../public/groceries-dark-mode-background.jpeg');
+  --primary: #f0f4f8;
+  --secondary: #d9e2ec;
+  --tertiary: #bcccdc;
+  --quaternary: #9fb3c8;
+  --background-primary: #102a43;
+  --background-secondary: #334e68;
+  --background-tertiary: #486581;
+  --background-primary-difused: #102a4376;
+  --background-secondary-difused: #5f89b1a4;
 }

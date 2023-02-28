@@ -1,12 +1,14 @@
 import styles from './MasterPage.module.css'
 import { Link, useRoute } from 'wouter'
 import { useThemeContext } from '../../providers/ThemeProvider'
+import { FaMoon, FaSun } from 'react-icons/fa/'
 
 const MasterPage = ({ children }) => {
   const [onHomePage] = useRoute('/Home')
   const [onTaskList] = useRoute('/TaskList')
   const [onGroceries] = useRoute('/Groceries')
   const { darkMode, toggleTheme } = useThemeContext()
+
   return (
     <>
       <header className={styles.header}>
@@ -40,22 +42,10 @@ const MasterPage = ({ children }) => {
           </Link>
         </section>
         <section>
-          {darkMode && (
-            <button
-              className={styles.themeButton}
-              onClick={() => toggleTheme()}
-            >
-              Dark-Mode
-            </button>
-          )}
-          {!darkMode && (
-            <button
-              className={styles.themeButton}
-              onClick={() => toggleTheme()}
-            >
-              Light-Mode
-            </button>
-          )}
+          <button className={styles.themeButton} onClick={() => toggleTheme()}>
+            {!darkMode && <FaMoon size={'1.5rem'} />}
+            {darkMode && <FaSun size={'1.5rem'} color={'silver'} />}
+          </button>
         </section>
       </header>
       {children}
